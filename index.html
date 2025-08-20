@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="style.css">
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -13,53 +13,48 @@
 
     <title>Simple Article Listing | devChallenges.io</title>
 
-    <!--You are welcome to delete these styles or modify them in your own stylesheet -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
 
-      body {
-        height: 100vh;
-      }
 
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
-    </style>
   </head>
   <body>
-    <!-- 
+    
+    <h1 class="encabezado">We release interesting articles about technology</h1>
+    <main class="lista_articulos"></main>
 
-      We release interesting articles about technology
-    
-      Unlocking the Power of Cloud Computing
-    
-      A Guide to Scalable Solutions
-    
-      November 12, 2024
-    
-      The Future of AI
-    
-      How Machine Learning is Revolutionizing Industries
-    
-      The Impact of 5G on Business
-    
-      How Faster Networks are Transforming the Way We Work
-    
-    -->
+      <article class="articulo">
+        <img class="articulo__imagen" src="resources\photo_1.png" alt="imagen block">
+        <div class="articulo__cuerpo">
+        <h2 class="articulo__titulo">Unlocking the Power of Cloud Computing:
+          A Guide to Scalable Solutions</h2>
+        <h2 class="articulo__fecha"><strong>November 12, 2024</strong></h2>
+        </div>
+      </article>
+
+      <article class="articulo">
+        <img class="articulo__imagen" src="resources\photo_2.png" alt="imagen block">
+        <div class="articulo__cuerpo">
+        <h2 class="articulo__titulo">The Future of AI:
+          How Machine Learning is Revolutionizing Industries</h2>
+        <h2 class="articulo__fecha"><strong>November 12, 2024</strong></h2>
+        </div>
+      </article>
+
+      <article class="articulo">
+        <img class="articulo__imagen" src="resources\photo_3.png" alt="imagen block">
+        <div class="articulo__cuerpo">
+        <h2 class="articulo__titulo">The Impact of 5G on Business:
+          How Faster Networks are Transforming the Way We Work</h2>
+        <h2 class="articulo__fecha"><strong>November 12, 2024</strong></h2>
+        </div>
+      </article>
+      
+
+    </main>
+
+
 
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="#">Luis Angel Guillen Cebrero</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
