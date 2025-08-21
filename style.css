@@ -71,7 +71,7 @@ body {
 }
 
 .author-info {
-        font-size: 14px;
+        font-size: 0.875;
         text-align: center;
         margin-top: 1.5rem;
         color: rgb(55, 65, 81);
@@ -96,7 +96,37 @@ body {
 
 }
 
-@media (max-width:300px) {
+@media (max-width:350px) {
     html{font-size: 6px;}
 
+}
+
+@media (max-width:300px) {
+    html{font-size: 4px;}
+
+}
+
+@media (max-width:300px) {
+    html{font-size: 6px;}
+}
+@media (max-height:745px) {
+    html{font-size: 12px;}
+}
+@media (max-height:540px) {
+    html{font-size: 10px;}
+}
+@media (max-height:450px) {
+    html{font-size: 8px;}
+}
+
+@media (max-height:450px) {
+    html{font-size: 8px;}
+}
+
+@media (max-height:400px) {
+    html{font-size: 6px;}
+}
+
+@media (max-height:300px) {
+    html{font-size: 4px;}
 }
