@@ -1,11 +1,14 @@
 @import url('https://fonts.google.com/specimen/Poppins');
 
+/* En mi pantalla 1vw=17.78px y vh=8.75 */
+
 :root{
     --fuente: "Poppins", sans-serif;
     --colorprimario: #F8FAFC;
     --colorsecundario:#000000;
     --colorterceario:#4D5562;
     --colorcuartario:#D9D9D9;
+    font-size: clamp(4px,1vw,16px);
 }
 
 
@@ -25,12 +28,12 @@ body {
         background-color: var(--colorprimario);
       }
 .encabezado{
-    margin:6rem 0 2rem 0;
-    width: 50rem;
+    margin:1rem 0 2rem 0;
+    width:50rem;
     text-align: center;
     font-family: var(--fuente);
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     color: var(--colotsecundario);
 }
 .lista__articulos{
@@ -51,7 +54,7 @@ body {
 
 }
 .articulo__cuerpo{
-    width: 29rem;
+    width: 28rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,8 +70,31 @@ body {
     font-family: var(--fuente);
     font-weight: 500;
     font-size: 0.875rem;
+    padding: 1.5rem 0 0 0; 
     color: var(--colorterceario);
 }
+
+
+@media(max-height:600px){
+    .lista__articulos{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .encabezado{
+        width: 60rem;
+    }
+    .articulo{
+        display: flex;
+        height: 7rem;
+        width: 30rem;
+        margin: 1.55rem 0 1rem 0;
+        align-items: center;
+    }
+}
+
+
+
 
 .author-info {
         font-size: 0.875;
@@ -81,52 +107,3 @@ body {
         text-decoration: none;
       }
 
-
-
-@media (max-width:700px) {
-    html{font-size: 12px;}
-    
-}
-@media (max-width:500px) {
-    html{font-size: 9px;}
-    
-}
-@media (max-width:400px) {
-    html{font-size: 8px;}
-
-}
-
-@media (max-width:350px) {
-    html{font-size: 6px;}
-
-}
-
-@media (max-width:300px) {
-    html{font-size: 4px;}
-
-}
-
-@media (max-width:300px) {
-    html{font-size: 6px;}
-}
-@media (max-height:745px) {
-    html{font-size: 12px;}
-}
-@media (max-height:540px) {
-    html{font-size: 10px;}
-}
-@media (max-height:450px) {
-    html{font-size: 8px;}
-}
-
-@media (max-height:450px) {
-    html{font-size: 8px;}
-}
-
-@media (max-height:400px) {
-    html{font-size: 6px;}
-}
-
-@media (max-height:300px) {
-    html{font-size: 4px;}
-}
