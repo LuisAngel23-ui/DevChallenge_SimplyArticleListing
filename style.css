@@ -142,14 +142,13 @@ body {
 
 @media(max-width:480px) and (min-height:600px){
     body{
-        display: flex;
+        height: 100vh;
+        width: 100vw;
     }
     .articulo{
         display: flex;
         flex-direction: column;
-        height: 200rem;
+        height: 20rem;
     }
-    .lista__articulos{
-        height: 60rem;
-    }
+    
 }
