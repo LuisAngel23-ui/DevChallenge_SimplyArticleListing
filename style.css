@@ -1,4 +1,6 @@
-@import url('https://fonts.google.com/specimen/Poppins');
+/* Reemplaza tu @import por: */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 
 /* En mi pantalla 1vw=17.78px y vh=8.75 */
 
@@ -20,7 +22,7 @@
 
 body {
         width: 100vw;
-        height: 100vh;
+        height: 150vh;
         display:flex;
         flex-direction: column;
         justify-content: center;
@@ -28,7 +30,7 @@ body {
         background-color: var(--colorprimario);
       }
 .encabezado{
-    margin:1rem 0 2rem 0;
+    margin:1rem 0 0 0;
     width:50rem;
     text-align: center;
     font-family: var(--fuente);
@@ -36,25 +38,36 @@ body {
     font-size: 2.5rem;
     color: var(--colotsecundario);
 }
+
+.encabezado__decorativo {
+  content: "";
+  display: block;
+  width: 30rem;
+  height: 1rem;
+  background-color: var(--colorcuartario);
+  margin: 1rem auto 3rem; /* centrado */
+  border-radius: 2px;
+  clip-path: ellipse(70% 100% at 50% 0%);
+}
 .lista__articulos{
     font-family: var(--fuente);
 }
 
 .articulo{
     display: flex;
-    height: 7rem;
-    margin: 1.55rem 0 1rem 0;
+    height: 10rem;
+    margin: 1.55rem 0 5rem 0;
     align-items: center;
 }
 .articulo__imagen{
-        margin-right: 2.5rem;
+        margin-right: 4.5rem;
         border-radius: 1rem;
-        width: 7.5rem;
+        width: 12rem;
         height: auto;
 
 }
 .articulo__cuerpo{
-    width: 28rem;
+    width: 46rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -63,43 +76,24 @@ body {
 }
 .articulo__titulo{
     font-family: var(--fuente);
-    font-size: 1.15rem;
+    font-weight: 600;
+    font-size: 1.75rem;
     color: var(--colorsecundario);
+    padding-bottom: 1rem;
 }
 .articulo__fecha{
     font-family: var(--fuente);
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
     padding: 1.5rem 0 0 0; 
     color: var(--colorterceario);
 }
 
 
-@media(max-height:600px){
-    .lista__articulos{
-        display:flex;
-        flex-direction: row;
-    }
-
-    .encabezado{
-        width: 60rem;
-    }
-    .articulo{
-        display: flex;
-        height: 7rem;
-        width: 30rem;
-        margin: 1.55rem 0 1rem 0;
-        align-items: center;
-    }
-}
-
-
-
-
 .author-info {
         font-size: 0.875;
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: 5rem;
         color: rgb(55, 65, 81);
       }
 
@@ -107,3 +101,55 @@ body {
         text-decoration: none;
       }
 
+@media(max-height:600px){
+    body{
+        height: 100vh;
+    }
+    .lista__articulos{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .encabezado{
+        width: 70rem;
+        margin:0 0 1rem 0;
+    }
+    .articulo{
+        display: flex;
+        height: 5rem;
+        width: 30rem;
+        margin: 1.55rem 1rem 2rem 0;
+        align-items: center;
+    }
+    .articulo__titulo{
+        font-size: 1rem;
+    }
+}
+@media(max-width:1000px) and (min-height:600px) and (min-width:480px){
+
+    
+    body{
+        height: 100vh;
+    }
+    .encabezado{
+        width: 70rem;
+    }
+    .articulo__cuerpo{
+        width: 60rem;
+    }
+}
+
+
+@media(max-width:480px) and (min-height:600px){
+    body{
+        display: flex;
+    }
+    .articulo{
+        display: flex;
+        flex-direction: column;
+        height: 200rem;
+    }
+    .lista__articulos{
+        height: 60rem;
+    }
+}
